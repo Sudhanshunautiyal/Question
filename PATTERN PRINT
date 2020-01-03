@@ -1,0 +1,26 @@
+DRAW A FOLLOWING PATTERN 
+1.Hallow full pyramid
+n=13(it is a number of line in which pyramid is drawn)
+            *
+           * *
+          *   *
+         *     *
+        *       *
+       *         *
+      *           *
+     *             *
+    *               *
+   *                 *
+  *                   *
+ *                     *
+* * * * * * * * * * * * *
+solution:
+def cv(n):
+	for i in range(n,0,-1):
+		if i==n:
+			print(" "*(i-1)+(n+1-i)*"*")
+		elif i==1:
+			s="*"*n
+			print(" ".join(s))
+		else:
+			print((" "*(i-1))+("*"*1)+(" "*(2*(n-i)-1)+("*"*1)))
