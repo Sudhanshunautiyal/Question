@@ -81,6 +81,22 @@ def cv(n):
 		s=s+"*"*(i)
 		print(" "*(n-i)+" ".join(s))
 		s=""
+5.Down triangle
+n=5(number of rows)
+***********
+ *       *
+  *     *
+   *   *
+    * *
+     *
+ANSWER>
+def cv(n):
+	for i in range(n,0,-1):
+		if i==n:
+			print("*"*(n+i+1))
+		else:
+			print(" "*(n-i)+"*"*1+" "*(2*i-2+1)+"*"*1)
+	print(" "*n+"*"*1)
 		
 		
 		
