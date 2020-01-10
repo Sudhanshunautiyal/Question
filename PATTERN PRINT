@@ -1,5 +1,5 @@
 DRAW A FOLLOWING PATTERN 
-1.Hallow full pyramid
+1) Hallow full pyramid
 n=13(it is a number of line in which pyramid is drawn)
             *
            * *
@@ -24,7 +24,7 @@ def cv(n):
 			print(" ".join(s))
 		else:
 			print((" "*(i-1))+("*"*1)+(" "*(2*(n-i)-1)+("*"*1)))
-2.Diamond Shape Pattern 
+2) Diamond Shape Pattern 
 n=5(number of rows)
     *(1 row)
    ***
@@ -41,7 +41,7 @@ def cv(n):
 		print((" "*(n-i))+"*"*(2*i-1))
 	for i in range(n-1,0,-1):
 		print(" "*(n-i)+"*"*(2*i-1))
-3. Right Pascal’s Triangle
+3) Right Pascal’s Triangle
 n=5(number of rows)
 *(1 row)
 **
@@ -58,7 +58,7 @@ def cv(n):
 		print("*"*(i))
 	for i in range(n-1,0,-1):
 		print("*"*i)
-4.Sandglass Star Pattern
+4) Sandglass Star Pattern
 n=5(number of rows)
 * * * * *(1 row)
  * * * *
@@ -81,7 +81,7 @@ def cv(n):
 		s=s+"*"*(i)
 		print(" "*(n-i)+" ".join(s))
 		s=""
-5.Down triangle
+5) Down triangle
 n=5(number of rows)
 ***********
  *       *
@@ -97,7 +97,7 @@ def cv(n):
 		else:
 			print(" "*(n-i)+"*"*1+" "*(2*i-2+1)+"*"*1)
 	print(" "*n+"*"*1)
-6.Diamond Star Pattern
+6) Diamond Star Pattern
 n=5(number of rows)
     *(1 row)
    * *
@@ -120,7 +120,7 @@ def cv(n):
 			print(" "*(n-i)+("*"*1)+(" "*(2*i-3))+("*"*1))
 		else:
 			print(" "*(n-1)+"*"*1)
-7.Simple number program
+7) Simple number program
 n=5(number of rows)
 1
 12
@@ -133,7 +133,7 @@ def cv(n):
 	for i in range(1,n+1):
 		s=s+str(i)
 		print(s)
-8.Number Pattern Program
+8) Number Pattern Program
 n=5(number of rows)
 1
 23
@@ -150,7 +150,7 @@ def cv(n):
 			s=s+str(c)
 		print(s)
 		s=""
-9.Pascal’s Triangle Program
+9) Pascal’s Triangle Program
 n=5(number of rows)
     1
    1 1
@@ -164,6 +164,45 @@ def cv(n):
 		s=s+str(11**(n-i))
 		print(" "*(i-1)+" ".join(s))
 		s=""
+10) Number Pattern
+n=5(number of rows)
+1 
+22 
+333 
+4444 
+55555
+ANSWER>
+def cv(n):
+	for i in range(1,n+1):
+		print(str(i)*i)
+11) Descending order Pattern
+n=5(number of rows)
+5
+54
+543
+5432
+54321
+ANSWER>
+def cv(n):
+	s=""
+	for i in range(n,0,-1):
+		s=s+str(i)
+		print(s)
+12) Right Triangle Numeric Pattern 
+n=5(number of rows)
+1
+21
+321
+4321
+54321
+ANSWER>
+def cv(n):
+	s=""
+	for i in range(1,n+1):
+		s=str(i)+s
+		print(s)
+
+		
 		
 			
 		
