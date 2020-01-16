@@ -180,11 +180,11 @@ def cv(n):
 		print(s)
 11) Right Triangle Numeric Pattern 
 n=5(number of rows)
-1
-21
-321
-4321
-54321
+1       
+2 1 
+3 2 1 
+4 3 2 1 
+5 4 3 2 1 
 ANSWER>
 def cv(n):
 	s=""
@@ -257,6 +257,22 @@ def cv(n):
 		print(a[:i])
 	for i in range(1,len(a)):
 		print(a[:i+1])
+16)Triangle Character Pattern 
+n=5(number of rows)
+     A 
+    A B 
+   A B C 
+  A B C D 
+ A B C D E 
+A B C D E F 
+ANSWER>
+def cv(n):
+	s=""
+	for i in range(65,65+n+1):
+		s=s+chr(i)+" "
+		print(" "*(65+n-i)+s)
+		
+		
 
 
 
